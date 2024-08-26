@@ -51,7 +51,7 @@ def predict_label(input_text: InputText):
         sentiment = 'NEGATIF'        
     return {"prediction":  ' '.join([str(prediction[0][0]),sentiment])}
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
+# if __name__ == '__main__':
+#     uvicorn.run(app, host='127.0.0.1', port=8000)
  
     #   to launch uvicorn main:app --reload 
