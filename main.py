@@ -35,7 +35,7 @@ model = load()
 def preprocess(tweet):
     tweet = [t.lower() for t in tweet]
     return tweet
-
+ 
 @app.post("/predict")
 def predict_label(input_text: InputText):
     text = input_text.text
